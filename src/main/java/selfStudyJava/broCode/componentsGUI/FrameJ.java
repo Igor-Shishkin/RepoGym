@@ -1,46 +1,55 @@
-package selfStudyJava.broCode.componentsGUI;
-
+package selfStudyJava.componentsGUI;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
 
 public class FrameJ {
     public static void main(String[] args) {
-        /*JFrame frame = new JFrame();
-        frame.setTitle("Title is here.");
-        frame.setSize(400,500);
-        frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        ImageIcon imageTree = new ImageIcon("tree-of-life.png");
-        frame.setIconImage(imageTree.getImage());
-        frame.getContentPane().setBackground(new Color(230,242,255));
-         */
-        ImageIcon image = new ImageIcon("src/additionalFiles/image.png");
-        Border border = BorderFactory.createLineBorder(Color.BLUE);
+        Border border2 = BorderFactory.createDashedBorder (Color.RED, 4,10);
+        ImageIcon horse = new ImageIcon("icons_chess.png");
 
-        JLabel label = new JLabel();
+        //JLabel label = new MyLabel();
         JLabel label2 = new JLabel();
-        label.setText("GOOD DAY!");
-        label.setIcon(image);
-        label.setHorizontalTextPosition(JLabel.CENTER);
-        label.setVerticalTextPosition(JLabel.TOP);
-        label.setForeground(Color.BLUE);
-        label.setFont(new Font ("MV Boli", Font.PLAIN, 25));
-        label.setIconTextGap(50);
-        label.setBackground(new Color(0xffccff));
-        label.setOpaque(true);
-        label.setBorder(border);
-        label.setVerticalAlignment(JLabel.CENTER);
-        label.setHorizontalAlignment(JLabel.CENTER);
-        label.setBounds(100, 60, 500, 350);
+        JLabel label3 = new JLabel();
+        label3.setIcon(horse);
+        label3.setText("This is a HORSE");
+        label3.setVerticalAlignment(JLabel.CENTER);
+        label3.setHorizontalAlignment(JLabel.CENTER);
+        label3.setHorizontalTextPosition(JLabel.CENTER);
+        label3.setVerticalTextPosition(JLabel.BOTTOM);
+        label3.setBounds(35,50,150,80);
+        label3.setFont(new Font ("MV Boli", Font.BOLD, 14));
 
-        label2.setBorder(border);
-        label2.setBounds(90,40, 550, 400);
+        JPanel redPanel1 = new JPanel();
+        redPanel1.setBackground(new Color (0x410101));
+        redPanel1.setBounds(0,0,300,25);
+        JPanel redPanel2 = new JPanel();
+        redPanel2.setBackground(new Color (0x410101));
+        redPanel2.setBounds(400,370,300,25);
+
+        JPanel bluePanel = new JPanel();
+        bluePanel.setBackground(Color.BLUE);
+        bluePanel.setBounds(100,60,200,200);
+        bluePanel.setLayout(null);
+        bluePanel.add(label3);
+
+
+        JPanel greenPanel = new JPanel();
+        greenPanel.setBackground(Color.green);
+        greenPanel.setBounds(270,60,200,200);
+        //greenPanel.add(label3);
+
+        label2.setBorder(border2);
+        label2.setBounds(90,50, 530, 290);
 
         MyFrame myFrame = new MyFrame();
-        myFrame.add(label);
+        //myFrame.add(label);
         myFrame.add(label2);
+        myFrame.add(redPanel1);
+        myFrame.add(redPanel2);
+        myFrame.add(bluePanel);
+        myFrame.add(greenPanel);
         myFrame.setLayout(null);
     }
 }
