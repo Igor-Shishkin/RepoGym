@@ -1,0 +1,7 @@
+Na podstawie 100000 elementowej tablicy z losowo wybranymi wartościami zaimplementuj następujące funkcjonalności:
+
+zwróć listę unikalnych elementów,
+zwróć listę elementów, które co najmniej raz powtórzyły się w wygenerowanej tablicy,
+zwróć listę 25 najczęściej powtarzających się elementów.
+Zaimplementuj metodę, która deduplikuje elementy w liście. W przypadku znalezienia duplikatu, zastępuje go nową losową
+wcześniej nie występującą wartością. Sprawdź czy metoda zadziałała poprawnie wywołując metodę numer 2.
