@@ -1,7 +1,5 @@
 package advancedJavaPractice.secondDay.myZad26;
 
-import  .Car;
-import  .CarType;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,7 +16,7 @@ public class Main {
 
 
         Car subaru1 = new  Car("Subcio", "Subaru Tomka", CarType.SEDAN);
-        Car subaru2 = new  Car("Impreza", "Subaru Mechanika",  .CarType.CABRIO);
+        Car subaru2 = new  Car("Impreza", "Subaru Mechanika", CarType.CABRIO);
         Car subaru3 = new  Car("Śmigacz", "Subaru Pawła", CarType.HATCHBACK);
 
         Car skoda1 = new  Car("Złomek", "Skoda Tomka", CarType.SEDAN);

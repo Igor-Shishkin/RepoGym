@@ -1,6 +1,5 @@
 package advancedJavaPractice.thirdDay.myZad36;
 
-import com.sda.advanced.solution.zad36.ThreadPlaygroundRunnable;
 
 public class Main {
 
