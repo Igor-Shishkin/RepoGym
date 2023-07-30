@@ -1,7 +1,6 @@
 package testingWithSDA.service;
 
 import org.junit.jupiter.api.Test;
-import testingWithSDA.service.IdentificationService;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -34,3 +33,4 @@ class IdentificationServiceTest {
 		assertThat(next).isEqualTo(4);
 	}
 }
+

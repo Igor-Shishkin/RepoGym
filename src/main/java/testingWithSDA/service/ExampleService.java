@@ -3,14 +3,16 @@ package testingWithSDA.service;
 import java.util.Objects;
 
 public class ExampleService {
+	private final RandomService randomService;
 	private int value;
 
-	public ExampleService(final int value) {
+	public ExampleService(final RandomService randomService, final int value) {
+		this.randomService = randomService;
 		this.value = value;
 	}
 
-	public ExampleService() {
-		this(0);
+	public ExampleService(final RandomService randomService) {
+		this(randomService, 0);
 	}
 
 	public int getValue() {
@@ -19,6 +21,14 @@ public class ExampleService {
 
 	public void setValue(final int value) {
 		this.value = value;
+	}
+
+	public int divide(final int a) {
+		return value / a;
+	}
+
+	public int getRandomInt() {
+		return randomService.getRandomInt(101);
 	}
 
 	@Override
@@ -45,3 +55,4 @@ public class ExampleService {
 				'}';
 	}
 }
+

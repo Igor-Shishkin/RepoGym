@@ -1,11 +1,10 @@
 package testingWithSDA.entity;
 
 public record EmailAddress(String value) {
-	public EmailAddress(final String value) {
-		if (value.contains("@")) {
-			this.value = value;
-		} else {
-			this.value = null;
+	public EmailAddress {
+		if (!value.contains("@")) {
+			throw new IllegalArgumentException("Email address must contain '@' sign!");
 		}
 	}
 }
+
