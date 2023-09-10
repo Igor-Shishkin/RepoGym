@@ -1,0 +1,4 @@
+Żeby dodać element do tablicy, należy użyć metody .push()
+
+Link do dokumentacji:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push

@@ -1,0 +1,1 @@
+console.log("Konsola JAVA SCRIPT została podłączona")
