@@ -6,6 +6,7 @@ public class FibonacciSeries {
         for (int i = 0; i < fibLength; i++) {
             System.out.printf("%d ", fib(i));
         }
+        System.out.println(fib2(6));
 
     }
 
@@ -14,5 +15,15 @@ public class FibonacciSeries {
             return number;
         }
         return  fib(number-1) + fib(number - 2);
+    }
+    private static int fib2(int number) {
+        if (number==0 || number==1) {
+            return number;
+        }
+        int n1 = fib2(number-1);
+        int n2 = fib2(number - 2);
+        System.out.println("");
+        System.out.println("number-1: " + n1 + "\tnumber-2: " + n2);
+        return  n1 + n2;
     }
 }
