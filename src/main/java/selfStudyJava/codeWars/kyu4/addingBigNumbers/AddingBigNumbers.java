@@ -21,6 +21,15 @@ public class AddingBigNumbers {
     public static String addWithoutBigIntegers(String a, String b) {
         StringBuilder result = new StringBuilder("");
         boolean remainder = false;
+
+        if (a.length()>1) {
+            a = deleteZeroAtTheBeginning(a);
+        }
+        if (b.length()>1) {
+            b = deleteZeroAtTheBeginning(b);
+        }
+        System.out.println(a + " : " + b);
+
         for (int i = a.length()-1, k = b.length()-1; i >= 0 || k >= 0 ; i--, k--) {
             int number1 = (i>=0) ? Character.getNumericValue(a.charAt(i)) : 0;
             int number2 = (k>=0) ? Character.getNumericValue(b.charAt(k)) : 0;
@@ -38,5 +47,14 @@ public class AddingBigNumbers {
         }
         result.reverse();
         return result.toString();
+    }
+
+    public static String deleteZeroAtTheBeginning(String number) {
+        for (int i = 0; i < number.length()-1; i++) {
+            if (number.charAt(i) != '0') {
+                return number.substring(i);
+                }
+        }
+        return number;
     }
 }
