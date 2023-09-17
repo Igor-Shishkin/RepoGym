@@ -54,3 +54,31 @@ function ifAdult(a) {
 
 console. log("date of birth: ", yearsOfBirth, "          is adult: ", ifAdult(yearsOfBirth));
 
+console.log("er4t50")
+console.log(sumOfIntegersInString("er4t50"))
+
+function sumOfIntegersInString(s){
+  
+    let sum = 0
+    let currentTextNumber = ""
+    console.log(s.length)
+    for (let i = 0; i < s.length; i++) {
+        console.log("symbol: ", s[i])
+      if (s[i] >= '0' && s[i] <= '9') {
+        console.log(s[i])
+        currentTextNumber += s[i]
+        console.log("curNumb = " , currentTextNumber)
+      } else {
+        if (currentTextNumber.length > 0) {
+          sum += Number(currentTextNumber);
+          console.log("sum = ", sum)
+
+          currentTextNumber = ""
+        }
+      }
+    }
+    if (s.length > 0) {
+        sum += Number(currentTextNumber);
+    }
+    return sum
+  }

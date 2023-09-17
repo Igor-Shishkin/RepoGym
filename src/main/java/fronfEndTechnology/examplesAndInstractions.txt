@@ -124,3 +124,5 @@ Zamontuj utworzony folder za pomocą polecenia.
 cd student-manager-angular
 Uruchom aplikacje poleceniem
 ng serve --open
+
+npm install !!после скачивания с git - скачать пакеты
