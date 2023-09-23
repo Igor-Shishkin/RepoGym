@@ -10,6 +10,10 @@ export class StudentService {
 
   constructor(private httpClient : HttpClient) { }
 
+  getStudentById(studentId : number) {
+    let studentUrl = this.url + "/" + studentId;
+    return this.httpClient.get<Student>(studentUrl);
+  }
 
   //Metoda odpowiedzialna za pobieranie studentów
   getStudents() {
@@ -24,6 +28,10 @@ export class StudentService {
 
   addStudent(student : Student) {
     return this.httpClient.post<Student>(this.url, student)
-    
+  }
+
+  updateStadent (student : Student) {
+    let studentUrl = this.url + "/" + student.id;
+    return this.httpClient.put<Student>(studentUrl, student);
   }
 }

@@ -1,0 +1,26 @@
+<h4>Dodaj studenta</h4>
+
+<form (submit)="save(name, email)">
+    <!-- name, surname -->
+    <div>
+        <label for="exampleInputEmail1" class="form-label" style="margin-top: 15px;">Enter name and surname</label>
+        <input required type="text" id="disabledTextInput" class="form-control" 
+        placeholder="Enter name and surname" #name>
+    </div>
+
+    <!-- email -->
+    <div>
+        <label for="exampleInputEmail1" class="form-label">Enter e-mail</label>
+        <input required type="email" id="disabledTextInput" class="form-control" 
+        placeholder="Enter e-mail" #email>
+    </div>
+
+    <!-- save -->
+    <button [disabled]="isAddProcessing"
+    class="btn btn-success" style="margin-top: 15px;">
+    <span *ngIf="isAddProcessing" class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+    Save</button>
+    <div *ngIf="isSuccess" class="alert alert-info" role="alert">
+        Student is added
+      </div>
+</form>

@@ -43,7 +43,9 @@
             <td>{{student.name | lowercase | uppercase}}</td>
             <td><a *ngIf="student.id>5" href="#mailto:o2@pl">{{student.email | lowercase}}</a></td>
             <td>
-                <button (click)="delete(student.id)" type="button" class="btn btn-outline-danger">Delete</button>
+                <a [routerLink]="'/detail-student/' + student.id" class="btn btn-outline-primary margin-button">Details</a>
+                <a [routerLink]="'/edit-student/' + student.id" class="btn btn-outline-info margin-button">Edycja</a>
+                <button (click)="delete(student.id)" type="button" class="btn btn-outline-danger margin-button">Delete</button>
             </td>
         </tr>
     </tbody>
