@@ -1,2 +1,0 @@
-Spróbuj wykonać zadanie analogicznie do podanego przykładu. Znacznik footer nie posiada id w HTMLu, jednak to nie powinno Cię powstrzymać :D 
-Jeśli jednak nie masz pomysłu jak to zrobić, dodaj do znacznika footer id.

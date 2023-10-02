@@ -1,6 +1,0 @@
-Żeby wykonać jakieś operację na każdym elemencie tablicy, użyj metody .map
-Pamiętaj, metoda map nie zmienia naszej tablicy, tylko zwraca zupełnie inną tablice.
-
-
-Link do dokumentacji.
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
