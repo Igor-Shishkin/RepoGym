@@ -1,6 +1,0 @@
-Żeby zmienić treść elemntu HTML, wykorzystaj metodę innerHTML("treść")
-
-Możesz wykorzystać wcześniej zrobioną zmienną, w któej znajduję się nagłówek.
-
-Link do dokumentacji:
-https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
