@@ -1,7 +1,7 @@
-package util;
+package com.example.moley.trainspringwithmoley.util;
 
-import data.Room;
-import data.RoomRepository;
+import com.example.moley.trainspringwithmoley.data.Room;
+import com.example.moley.trainspringwithmoley.data.RoomRepository;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
@@ -11,6 +11,7 @@ public class AppStartupEvent implements ApplicationListener<ApplicationReadyEven
     private final RoomRepository roomRepository;
 
     public AppStartupEvent(RoomRepository roomRepository) {
+
         this.roomRepository = roomRepository;
     }
 
