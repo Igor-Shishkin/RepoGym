@@ -1,6 +1,0 @@
-- Stwórz kolejną klasę w pliku style.css po nazwą "super-warning"
-
-- Jeśli nie wiesz jak zrobić by czcionka miała 20px, skorzystaj z dokumentacji: https://developer.mozilla.org/en-US/docs/Web/CSS/font-size
-- Do wielkości ramki możesz wykorzystać CSS z klasy "warning" 
-
-- Dodaj tą klasę przez JavaScript, analogicznie jak dodawany jest "warning"

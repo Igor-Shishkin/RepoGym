@@ -1,6 +1,0 @@
-Żeby usunąć element na stronie, należy wykorzystać metodę removeChild()
-
-Możesz wykorzystać wcześniej zrobioną zmienną, w któej znajduję się złoty tekst.
-
-Link do dokumentacji:
-https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild

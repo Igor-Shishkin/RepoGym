@@ -1,4 +1,0 @@
-żeby sprawdzić czy coś znajduję się tablicy, możemy użyć metody .includes()
-
-Link do dokumentacji:
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes

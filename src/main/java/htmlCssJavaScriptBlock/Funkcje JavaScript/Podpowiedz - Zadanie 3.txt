@@ -1,2 +1,0 @@
-Zdefiniuj zmieną w ten sposób (skopiuj kod), żeby uzsykać obecny rok:
-const currentYear = new Date().getFullYear()
