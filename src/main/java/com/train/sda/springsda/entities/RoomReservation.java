@@ -10,6 +10,8 @@ import java.util.Date;
 @Getter
 @Setter
 public class RoomReservation {
+    @Getter
+    @Setter
     private long roomID;
     private long guestId;
     private String roomName;

@@ -56,5 +56,32 @@ public class ReservationService {
         return roomReservations;
     }
 
+    public List<Guest> getHotelGuests() {
+        return this.guestRepository.findAll();
+    }
 
+    public List<Room> getRooms() {
+        List<Room> roomList = new ArrayList<>();
+        for (Room room : this.roomRepository.findAll()) {
+            roomList.add(room);
+        }
+        return roomList;
+    }
+    public void addGuest(Guest guest) {
+        if (guest == null) {
+            throw new RuntimeException("Guest cannot be null");
+        }
+        this.guestRepository.save(guest);
+    }
+
+    public void deleteGuest(Long guestID) {
+        if (this.guestRepository.findAll().stream()
+                .noneMatch(guest -> guest.getGuestId()==guestID)) {
+            throw new RuntimeException("Guest not found");
+        }
+//        if (this.guestRepository.findById(guestID) == null) {
+//            throw new RuntimeException("Guest not found");
+//        }
+        this.guestRepository.deleteById(guestID);
+    }
 }

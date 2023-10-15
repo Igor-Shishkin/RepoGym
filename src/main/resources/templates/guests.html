@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guests SDA</title>
+</head>
+<body>
+<h1>Our guests</h1>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Surname</td>
+        <td>telephone</td>
+        <td>email</td>
+    </tr>
+    <tr th:each="guest: ${guestList}">
+        <td th:text="${guest.firstName}">Name</td>
+        <td th:text="${guest.lastName}">Surname</td>
+        <td th:text="${guest.phoneNumber}">telephone</td>
+        <td th:text="${guest.emailAddress}">email</td>
+    </tr>
+</table>
+</body>
+</html>
