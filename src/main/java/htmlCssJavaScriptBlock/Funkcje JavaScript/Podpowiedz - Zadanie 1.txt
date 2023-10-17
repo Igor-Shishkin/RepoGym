@@ -1,7 +1,0 @@
-Logika sprawdzania pełnoletności:
-
-if (age >= 18) {
-    return true
-} else {
-   return false
-}

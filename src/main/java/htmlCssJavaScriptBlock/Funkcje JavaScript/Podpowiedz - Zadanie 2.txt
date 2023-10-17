@@ -1,8 +1,0 @@
-Logika sprawdzania rocznikowej pełnoletności:
-
-const bornYear = [obecny rok] - [data urodzenia]
-if (bornYear >= 18) {
-    return true
-} else {
-   return false
-}
