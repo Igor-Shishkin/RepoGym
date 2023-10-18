@@ -1,0 +1,28 @@
+﻿product_id,name,power,manufacturing_cost,category_id
+KE001,K-Eco phone charger,3,1.23,4
+KEAA12,K-Eco AA NiMH rechargeable batteries (12-pack),,5.00,1
+KEAAA06,K-Eco AAA NiMH rechargeable batteries (6-pack),,2.20,1
+KEAAA12,K-Eco AAA NiMH rechargeable batteries (12-pack),,4.40,1
+KE12Li,K-Eco 12-volt Lithium-ion solar battery,,2100.00,1
+KE18Li,K-Eco 18-volt Lithium-ion solar battery,,2300.00,1
+KE36Li,K-Eco 36-volt Lithium-ion solar battery,,2800.00,1
+KEBR5,K-Eco Breeze Mini,5,31.45,5
+KEBL100,K-Eco Blast 100,100,175.00,5
+KEBL200,K-Eco Blast 200,200,230.00,5
+KEBL400,K-Eco Blast 400,400,455.00,5
+KEBL400X,K-Eco Blast 400x,400,650.00,5
+KEBL600,K-Eco Blast 600,600,585.00,5
+KEBL800,K-Eco Blast 800,800,685.00,5
+KEBL1200,K-Eco Blast 1200,1200,1050.00,5
+KE9W,K-Eco Energy Bulbs 9W,9,0.55,3
+KE9W04,K-Eco Energy Bulbs 9W (4-pack),9,2.20,3
+KE9W08,K-Eco Energy Bulbs 9W (8-pack),9,4.40,3
+KE13W,K-Eco Energy Bulbs 13W,13,0.75,3
+KE13W04,K-Eco Energy Bulbs 13W (4-pack),13,3.00,3
+KE13W08,K-Eco Energy Bulbs 13W (8-pack),13,6.00,3
+KE20W,K-Eco Energy Bulbs 20W,20,1.20,3
+KE20W04,K-Eco Energy Bulbs 20W (4-pack),20,4.90,3
+KE20W08,K-Eco Energy Bulbs 20W (8-pack),20,9.80,3
+KE23W,K-Eco Energy Bulbs 23W,23,1.45,3
+KE23W04,K-Eco Energy Bulbs 23W (4-pack),23,5.80,3
+KE23W08,K-Eco Energy Bulbs 23W (8-pack),23,11.60,3

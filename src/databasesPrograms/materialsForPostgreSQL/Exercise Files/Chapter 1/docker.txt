@@ -1,0 +1,23 @@
+-- Create a PostgreSQL container in Docker:
+
+docker run --name postgresql-server -e POSTGRES_PASSWORD=Adam123456 -p 5432:5432 -d postgres:15.2
+
+
+-- Installation Notes:
+You can name your container whatever you'd like. This is just the name of the Docker container, not the name of your database or server.
+
+Use a strong password that includes upper and lowercase charactes and numbers.
+
+To change the connection port, alter the first number after -p. For instance `-p 5430:5432` will allow you to connect on port 5430 instead.
+If you create multiple PostgreSQL containers, they will each need a unique port number.
+
+You can create a container with a different Postgres version inside by specifying `postgres:14.7` or `postgres:latest` at the end of the `docker run` command.
+
+
+-- Use the psql interactive command line tool:
+docker exec -it postgresql psql -U postgres
+
+\l         list databases
+\d         list tables and views
+\?         help
+exit       quit
