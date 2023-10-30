@@ -4,7 +4,8 @@ public enum ApplicationUserPermission {
     STUDENT_READ("student:read"),
     STUDENT_WRITE("student:write"),
     COURSE_READ("course:read"),
-    COURSE_WRITE("course:write");
+    COURSE_WRITE("course:write"),
+    GUEST_READ("guest:read");
 
     private final String permission;
 

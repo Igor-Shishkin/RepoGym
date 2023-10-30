@@ -9,6 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class PasswordConfig {
     @Bean // Metoda zwraca obiekt Bean-a
     public PasswordEncoder passwordEncoder(){
+        // Spring domyślnie używa do kodowania 'String encode(CarSequence var)'
         return new BCryptPasswordEncoder(10); // jedna z najpopularniejszych implementacji 'PasswordEncoder'
     }
 }
