@@ -5,7 +5,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import testingWithSDA.entity.PeselNumber;
+import sda.testingWithSDA.entity.PeselNumber;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

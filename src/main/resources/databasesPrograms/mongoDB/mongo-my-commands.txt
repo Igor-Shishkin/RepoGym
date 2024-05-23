@@ -1,0 +1,13 @@
+mongod --dbpath folder/
+
+mongosh
+{
+show databases
+db.test.insertOne({"hello":"world"})
+
+openssl rand -base64 775 > keyfile
+chmod 400 keyfile
+mkdir -p m{1,2,3}/db
+
+mongod --replSet myReplSet --dbpath ./m1/db --logpath ./m1/mongodb.log --port 27-17 --fork --keyfile ./keyfile
+

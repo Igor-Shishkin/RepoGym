@@ -1,0 +1,6 @@
+Zaimplementuj klasę SDAHashSet , która będzie implementować logikę HashSet. W tym celu zaimplementuj obsługę metod:
+• add
+• remove
+• size
+• contains
+• clear

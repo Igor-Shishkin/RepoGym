@@ -1,8 +1,7 @@
 package testingWithSDA.entity;
 
 import org.assertj.core.api.ThrowableAssert;
-import org.junit.jupiter.api.Test;
-import testingWithSDA.entity.EmailAddress;
+import sda.testingWithSDA.entity.EmailAddress;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;

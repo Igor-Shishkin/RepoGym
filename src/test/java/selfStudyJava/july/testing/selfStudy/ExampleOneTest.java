@@ -1,6 +1,8 @@
 package selfStudyJava.july.testing.selfStudy;
 
 import org.junit.jupiter.api.Test;
+import sda.selfStudyJava.july.testing.selfStudy.ExampleOne;
+
 import static org.junit. jupiter.api.Assertions.*;
 
 class ExampleOneTest {

@@ -1,6 +1,7 @@
 package testingWithSDA.service;
 
 import org.junit.jupiter.api.Test;
+import sda.testingWithSDA.service.IdentificationService;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

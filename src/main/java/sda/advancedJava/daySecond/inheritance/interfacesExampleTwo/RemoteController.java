@@ -1,0 +1,5 @@
+package sda.advancedJava.daySecond.inheritance.interfacesExampleTwo;
+@FunctionalInterface
+public interface RemoteController {
+    void enable(boolean enable);
+}

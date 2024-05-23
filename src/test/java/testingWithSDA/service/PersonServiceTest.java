@@ -2,15 +2,13 @@ package testingWithSDA.service;
 
 import org.assertj.core.data.Offset;
 import org.junit.jupiter.api.Test;
-import testingWithSDA.entity.EmailAddress;
-import testingWithSDA.entity.Person;
-import testingWithSDA.entity.PeselNumber;
-import testingWithSDA.service.IdentificationService;
-import testingWithSDA.service.PersonService;
+import sda.testingWithSDA.entity.EmailAddress;
+import sda.testingWithSDA.entity.Person;
+import sda.testingWithSDA.entity.PeselNumber;
+import sda.testingWithSDA.service.IdentificationService;
+import sda.testingWithSDA.service.PersonService;
 
 import org.assertj.core.api.ThrowableAssert;
-import org.assertj.core.data.Offset;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
