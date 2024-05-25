@@ -1,6 +1,6 @@
 package sda.advancedJava.dayFifth.reflectionExamples;
 
-import advancedJava.dayForth.models.Car;
+import sda.advancedJava.dayForth.models.Car;
 
 import java.lang.reflect.Field;
 

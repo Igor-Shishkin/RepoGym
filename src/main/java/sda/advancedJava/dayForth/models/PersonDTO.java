@@ -1,6 +1,6 @@
 package sda.advancedJava.dayForth.models;
 
-import advancedJava.dayForth.models.utils.Person;
+import sda.advancedJava.dayForth.models.utils.Person;
 
 public class PersonDTO {
     private final Integer id;

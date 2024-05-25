@@ -1,7 +1,7 @@
 package sda.advancedJava.dayForth.models.utils;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
-import advancedJava.dayForth.models.Car;
+import sda.advancedJava.dayForth.models.Car;
 import com.google.common.collect.ImmutableList;
 import com.google.common.io.Resources;
 import org.apache.commons.io.IOUtils;

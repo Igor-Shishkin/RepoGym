@@ -1,6 +1,6 @@
 package sda.advancedJava.dayForth;
 
-import advancedJava.dayForth.animals.Lion;
+import sda.advancedJava.dayForth.animals.Lion;
 
 import java.util.Objects;
 

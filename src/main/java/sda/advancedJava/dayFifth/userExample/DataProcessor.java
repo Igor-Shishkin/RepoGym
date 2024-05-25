@@ -1,8 +1,8 @@
 package sda.advancedJava.dayFifth.userExample;
 
-import advancedJava.dayFifth.exceptionExamples.DatabaseConnectException;
-import advancedJava.dayFifth.exceptionExamples.FileAccessException;
-import advancedJava.dayFifth.exceptionExamples.ValidationException;
+import sda.advancedJava.dayFifth.exceptionExamples.DatabaseConnectException;
+import sda.advancedJava.dayFifth.exceptionExamples.FileAccessException;
+import sda.advancedJava.dayFifth.exceptionExamples.ValidationException;
 import sda.advancedJava.dayFifth.exceptionExamples.DatabaseConnectException;
 
 public class DataProcessor {

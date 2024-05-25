@@ -1,12 +1,12 @@
 package sda.advancedJava.dayForth;
 
-import advancedJava.dayForth.models.PersonDTO;
+import sda.advancedJava.dayForth.models.PersonDTO;
 import com.google.common.base.Predicate;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
-import advancedJava.dayForth.models.Car;
-import advancedJava.dayForth.models.utils.Data;
-import advancedJava.dayForth.models.utils.Person;
+import sda.advancedJava.dayForth.models.Car;
+import sda.advancedJava.dayForth.models.utils.Data;
+import sda.advancedJava.dayForth.models.utils.Person;
 
 import java.io.IOException;
 import java.util.*;
