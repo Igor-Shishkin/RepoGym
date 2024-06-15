@@ -8,12 +8,15 @@ public class CoffeeMakingActionsWithConditions {
     private final ReentrantLock lock = new ReentrantLock();
     private final Condition conditionOne = lock.newCondition();
     private final Condition conditionTwo = lock.newCondition();
+    private boolean espressoAdded = false;
+    private boolean milkAdded = false;
 
     public void addEspresso() {
         lock.lock();
         try {
             System.out.println("Espresso is added");
-            conditionOne.signal();
+            espressoAdded = true;
+            conditionOne.signalAll();
         } finally {
             lock.unlock();
         }
@@ -22,27 +25,30 @@ public class CoffeeMakingActionsWithConditions {
     public void addMilk() {
         lock.lock();
         try {
-            conditionOne.await();
+            while (!espressoAdded) {
+                conditionOne.await();
+            }
             System.out.println("Milk is added");
-            conditionTwo.signal();
+            milkAdded = true;
+            conditionTwo.signalAll();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         } finally {
             lock.unlock();
         }
-
     }
 
     public void addSprinkles() {
         lock.lock();
         try {
-            conditionTwo.await();
+            while (!milkAdded) {
+                conditionTwo.await();
+            }
             System.out.println("Sprinkles is added");
         } catch (InterruptedException e) {
             System.out.println("Exception: " + e);
         } finally {
             lock.unlock();
         }
-
     }
 }

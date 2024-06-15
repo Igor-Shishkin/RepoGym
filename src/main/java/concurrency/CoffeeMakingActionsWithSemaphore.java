@@ -8,7 +8,7 @@ public class CoffeeMakingActionsWithSemaphore {
 
     public void addEspresso() {
         System.out.println("Espresso is added");
-        s1.release();
+        s1.release(10);
     }
 
     public void addMilk() {
