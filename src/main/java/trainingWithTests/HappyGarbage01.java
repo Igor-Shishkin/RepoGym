@@ -7,6 +7,10 @@ public class HappyGarbage01 {
     {
         var map = new HashMap<String, Integer>();
         map.put("One", 1);
+        map.merge("Two", 1, Integer::sum);
+        map.merge("Two", 1, Integer::sum);
+        map.merge("Two", 1, Integer::sum);
+        map.merge("Two", 1, Integer::sum);
         System.out.println(map.get("Two"));
     }
     static int sum(int n) {
