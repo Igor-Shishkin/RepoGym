@@ -1,0 +1,61 @@
+Write a PostgreSQL query that selects film_id, the title and special_features columns from the film table in the DVD rental database, and returns all films that have the most popular feature as one of their features. By "most popular" is meant that it appears most frequently among all the special features amidst all films of film table
+
+Notes:
+for the sample tests, static dump of DVD Rental Sample Database is used, for the final solution - random tests.
+The result should be ordered by title alphabetically, if title is the same - then by film_id in asc order.
+let's assume that there are no ties for the most frequent special feature
+in special_features there are no duplicates - all values are unique
+Schema:
+film table:
+Column            | Type      | Modifiers
+------------------+-----------+-----------
+film_id           | integer   | not null
+title             | varchar   | not null
+description       | text      | not null
+release_year      | integer   | not null
+language_id       | integer   | not null
+rental_duration   | integer   | not null
+rental_rate       | numeric   | not null
+length            | integer   | not null
+replacement_cost  | numeric   | not null
+rating            | varchar   | not null
+last_update       | timestamp | not null
+special_features  | text[]    | not null
+Desired Output
+The desired output should look like this:
+
+film_id | title                             | special_features                       |
+--------+-----------------------------------+----------------------------------------|
+   32   | A Shawshank Redemption            | {Trailers, Deleted Scenes}             |
+   14   | Monty Python and the Holy Grail   | {Trailers, Deleted Scenes}             |
+...
+
+
+
+
+
+-- Your SQL
+
+WITH feature_counts AS (
+    SELECT unnest(special_features) AS feature, COUNT(*) AS frequency
+    FROM film
+    GROUP BY feature
+),
+most_popular_feature AS (
+    SELECT feature
+    FROM feature_counts
+    ORDER BY frequency DESC
+    LIMIT 1
+)
+
+SELECT film_id, title, special_features
+FROM film
+WHERE EXISTS (
+    SELECT 1
+    FROM most_popular_feature
+    WHERE most_popular_feature.feature = ANY(film.special_features)
+)
+ORDER BY title, film_id;
+
+
+
