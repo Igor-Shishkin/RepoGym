@@ -1,14 +1,14 @@
 package concurrency.bySulejmanow.collections;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class CollectionSafeDemo {
     public static void main(String[] args) {
         List<Integer> threadSafeList = Collections.synchronizedList(new LinkedList<>());
-
+        List<Integer> list = new CopyOnWriteArrayList<>();
+        Map<Long, Long> map = new ConcurrentHashMap<>();
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < 1_000_000; i++) {
                 threadSafeList.add(i);
