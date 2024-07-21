@@ -1,0 +1,3 @@
+[Worker[name=John, age=23, phoneNumber=126 5757 43], Worker[name=Tom, age=19, phoneNumber=656 5712 43], Worker[name=Jane, age=25, phoneNumber=651 2757 43]]
+[Worker[name=John, age=23, phoneNumber=126 5757 43], Worker[name=Tom, age=19, phoneNumber=656 5712 43], Worker[name=Jane, age=25, phoneNumber=651 2757 43]]
+[Worker[name=John, age=23, phoneNumber=126 5757 43], Worker[name=Tom, age=19, phoneNumber=656 5712 43], Worker[name=Jane, age=25, phoneNumber=651 2757 43]]
