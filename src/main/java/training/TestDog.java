@@ -1,4 +1,4 @@
-package trainingWithTests;
+package training;
 
 import java.util.Arrays;
 

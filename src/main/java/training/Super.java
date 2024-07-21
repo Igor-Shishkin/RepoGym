@@ -1,4 +1,4 @@
-package trainingWithTests;
+package training;
 
 class Super
 {

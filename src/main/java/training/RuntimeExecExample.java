@@ -1,4 +1,4 @@
-package trainingWithTests;
+package training;
 
 import java.io.BufferedReader;
 import java.io.IOException;
