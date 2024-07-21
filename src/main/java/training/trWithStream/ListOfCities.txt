@@ -1,0 +1,33 @@
+state                town                population
+..................   ..................  ..........
+Mazowieckie          Warsaw              1,790,658
+Mazowieckie          Radom               213,218
+Mazowieckie          Płock               120,191
+Mazowieckie          Siedlce             77,872
+Mazowieckie          Pruszków            61,021
+Małopolskie          Kraków              779,966
+Małopolskie          Tarnów              109,359
+Małopolskie          Nowy Sącz           83,572
+Małopolskie          Oświęcim            39,454
+Łódzkie              Łódź                679,941
+Łódzkie              Piotrków Trybunalski 76,717
+Łódzkie              Pabianice           65,283
+Łódzkie              Bełchatów           57,319
+Wielkopolskie        Poznań              534,813
+Wielkopolskie        Kalisz              101,625
+Wielkopolskie        Konin               74,151
+Wielkopolskie        Piła                73,868
+Wielkopolskie        Ostrów Wielkopolski 71,560
+Dolnośląskie         Wrocław             642,869
+Dolnośląskie         Legnica             99,350
+Dolnośląskie         Wałbrzych           113,620
+Dolnośląskie         Jelenia Góra        78,783
+Dolnośląskie         Lubin               77,402
+Pomorskie            Gdańsk              470,907
+Pomorskie            Gdynia              246,348
+Zachodniopomorskie   Szczecin            402,465
+Zachodniopomorskie   Koszalin            107,450
+Lubelskie            Lublin              340,466
+Lubelskie            Chełm               63,949
+Podkarpackie         Rzeszów             196,208
+Podkarpackie         Przemyśl            60,433
