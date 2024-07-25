@@ -23,7 +23,6 @@ public class ThreadedEchoHandler implements Runnable{
             out.println("Witaj! Wpisz BYE, by zakożczyć");
 
             var done = false;
-
             while (!done && in.hasNextLine()) {
                 String line = in.nextLine();
                 out.println("ECHO: " + line);
