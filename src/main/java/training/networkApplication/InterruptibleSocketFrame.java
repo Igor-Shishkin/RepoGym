@@ -1,4 +1,4 @@
-package training.networkApplication.interruptibleSocketTest;
+package training.networkApplication;
 
 import javax.swing.*;
 import java.awt.*;
@@ -86,7 +86,6 @@ public class InterruptibleSocketFrame extends JFrame {
         server = new TestServer();
         new Thread(server).start();
         pack();
-
     }
 
 
@@ -98,9 +97,9 @@ public class InterruptibleSocketFrame extends JFrame {
         messages.append("With blocking: \n");
         try (var socket = new Socket("localhost", 8189);) {
             in = new Scanner(socket.getInputStream(), StandardCharsets.UTF_8);
-            while (Thread.currentThread().isInterrupted()) {
-                messages.append("Reading ");
+            while (!Thread.currentThread().isInterrupted()) {
                 if (in.hasNextLine()) {
+                    messages.append("Reading ");
                     String line = in.nextLine();
                     messages.append(line);
                     messages.append("\n");
@@ -118,18 +117,19 @@ public class InterruptibleSocketFrame extends JFrame {
 
 
     private void connectInterruptible() throws IOException {
-        messages.append("\nInterruptible: ");
+        messages.append("\nInterruptible: \n");
         try (SocketChannel channel = SocketChannel.open(new InetSocketAddress("localhost", 8189))) {
             in = new Scanner(channel, StandardCharsets.UTF_8);
             while (!Thread.currentThread().isInterrupted()) {
-                messages.append("Reading ");
+
                 if (in.hasNextLine()) {
+                    messages.append("Reading ");
                     String line = in.nextLine();
                     messages.append(line);
                     messages.append("\n");
                 }
             }
-        } finally {
+        }  finally {
             EventQueue.invokeLater(() -> {
                 messages.append("\nChannel is closed.\n");
                 interruptibleButton.setEnabled(true);
@@ -175,16 +175,18 @@ public class InterruptibleSocketFrame extends JFrame {
         @Override
         public void run() {
             try {
-                try (OutputStream outputStream = incoming.getOutputStream();
+                try  {
+                    OutputStream outputStream = incoming.getOutputStream();
                     var out = new PrintWriter(
                             new OutputStreamWriter(outputStream, StandardCharsets.UTF_8),
-                            true); )  {
-                    while (counter <= 100) {
+                            true);
+                    while (counter <= 30) {
                         counter++;
-                        if (counter <= 10) out.println(counter);
+                        if (counter<=20) out.println(counter);
                         Thread.sleep(100);
                     }
                 } finally {
+                    incoming.close();
                     messages.append("Zamykanie servera.\n");
                 }
 

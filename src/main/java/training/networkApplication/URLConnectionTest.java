@@ -8,6 +8,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+
+/**
+ * @author Cay Horstmann
+ */
 public class URLConnectionTest {
     public static void main(String[] args) {
         try {
