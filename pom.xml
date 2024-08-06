@@ -18,6 +18,22 @@
 
 
   <dependencies>
+
+      <!-- https://mvnrepository.com/artifact/org.apache.derby/derbyclient -->
+      <dependency>
+          <groupId>org.apache.derby</groupId>
+          <artifactId>derbyclient</artifactId>
+          <version>10.17.1.0</version>
+      </dependency>
+
+
+      <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+      <dependency>
+          <groupId>com.mysql</groupId>
+          <artifactId>mysql-connector-j</artifactId>
+          <version>9.0.0</version>
+      </dependency>
+
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
