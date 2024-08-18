@@ -64,6 +64,7 @@ public class HttpClientTest {
                 .build();
         HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 
+        httpClient.close();
         return response.toString();
     }
 }
